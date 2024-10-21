@@ -310,7 +310,6 @@ class DeepFace
         $process = $this->process($script);
 
         $output = $process
-            ->mustRun()
             ->getOutput();
 
         $errorOutput = $process->getErrorOutput();
