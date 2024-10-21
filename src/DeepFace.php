@@ -309,9 +309,8 @@ class DeepFace
         $script = $this->script($filepath, $data);
         $process = $this->process($script);
 
-        $output = $process
-            ->run()
-            ->getOutput();
+        $process->run()
+        $output = $process->getOutput();
 
         $errorOutput = $process->getErrorOutput();
 
